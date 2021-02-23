@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Akame - Hair Salon</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700"> 
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="cssm/bootstrap.min.css">
+    <link rel="stylesheet" href="cssm/magnific-popup.css">
+    <link rel="stylesheet" href="cssm/jquery-ui.css">
+    <link rel="stylesheet" href="cssm/owl.carousel.min.css">
+    <link rel="stylesheet" href="cssm/owl.theme.default.min.css">
+
+
+    <link rel="stylesheet" href="cssm/aos.css">
+
+    <link rel="stylesheet" href="cssm/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="./img/core-img/favicon.ico">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    
+  </head>
+  <body>
+    <!-- Header Area Start -->
+    <header class="header-area">
+        <!-- Top Header Area Start -->
+        <div class="top-header-area">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-5">
+                        <div class="top-header-content">
+                            <p>Welcome to hair salon!</p>
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <div class="top-header-content text-right">
+                            <p><i class="fa fa-clock-o" aria-hidden="true"></i> Mon-Sat: 8.00 to 17.00 <span class="mx-2"></span>1772-327237 | <span class="mx-2"></span> <i class="fa fa-phone" aria-hidden="true"></i> Call us: (+880) </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Header Area End -->
+
+        <!-- Main Header Start -->
+        <div class="main-header-area">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Classy Menu -->
+                    <nav class="classy-navbar justify-content-between" id="akameNav">
+
+                        <!-- Logo -->
+                        <a class="nav-brand" href="index.html"><img src="./img/core-img/logo.png" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+                            <!-- Menu Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul id="nav">
+                                    <li class="active"><a href="./index.html">Home</a></li>
+                                    <li><a href="#">Pages</a>
+                                        <ul class="dropdown">
+                                            <li><a href="index.html">- Home</a></li>
+                                            <li><a href="about.html">- About Us</a></li>
+                                            <li><a href="service.html">- Services</a></li>
+                                            <li><a href="portfolio.html">- Portfolio</a></li>
+                                            <li><a href="shop.html">- Shop</a></li>
+                                            <li><a href="single-blog.html">- Blog Details</a></li>
+                                            <li><a href="contact.html">- Contact</a></li>
+                                            <li><a href="#">- Dropdown</a>
+                                                <ul class="dropdown">
+                                                    <li><a href="#">- Dropdown Item</a></li>
+                                                    <li><a href="#">- Dropdown Item</a></li>
+                                                    <li><a href="#">- Dropdown Item</a></li>
+                                                    <li><a href="#">- Dropdown Item</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="portfolio.html">Portfolio</a></li>
+                                    <li><a href="service.html">Services</a></li>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="shop.html">Shop</a></li>
+                                    <li><a href="booknow.html">Contact</a></li>
+                                </ul>
+
+                                <!-- Cart Icon -->
+                                <div class="cart-icon ml-5 mt-4 mt-lg-0">
+                                    <a href="cart.html"><i class="icon_cart"></i></a>
+                                </div>
+
+                                <!-- Book Icon -->
+                                <div class="book-now-btn ml-5 mt-4 mt-lg-0 ml-md-4">
+                                    <a href="booknow.html" class="btn akame-btn">Book Now</a>
+                                </div>
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Area End -->
+  
+  
+  <div class="site-wrap">
+    
+    <div class="bg-light py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 mb-0"><a href="index.html">Home</a> <span class="mx-2 mb-0">/</span> <a href="cart.html">Cart</a> <span class="mx-2 mb-0">/</span> <strong class="text-black">Checkout</strong></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-12">
+            <div class="border p-4 rounded" role="alert">
+              Returning customer? <a href="#">Click here</a> to login
+            </div>
+          </div>
+        </div>
+        
+        <form action="insert.php" onsubmit="validate()" method="post">
+        <div class="row">
+          <div class="col-md-6 mb-5 mb-md-0">
+            <h2 class="h3 mb-3 text-black">Billing Details</h2>
+            <div class="p-3 p-lg-5 border">
+              <div class="form-group">
+                <label for="c_country" class="text-black">Country <span class="text-danger">*</span></label>
+                <select id="c_country" class="form-control" name="country" >
+                  <option value="1">Select a country</option>    
+                  <option value="2">Bangladesh</option>    
+                  <option value="3">Algeria</option>    
+                  <option value="4">Afghanistan</option>    
+                  <option value="5">Ghana</option>    
+                  <option value="6">Albania</option>    
+                  <option value="7">Bahrain</option>    
+                  <option value="8">Colombia</option>    
+                  <option value="9">Dominican Republic</option>    
+                </select>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-6">
+                  <label for="c_fname" class="text-black">First Name <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="c_fname" name="fname">
+                </div>
+                <div class="col-md-6">
+                  <label for="c_lname" class="text-black">Last Name <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="c_lname" name="lname">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <label for="c_address" class="text-black">Address <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="c_address" name="address" placeholder="address">
+                </div>
+              </div>
+
+
+              <div class="form-group row">
+                <div class="col-md-6">
+                  <label for="c_state_country" class="text-black">State / Country <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="c_state_country" name="state_country">
+                </div>
+                <div class="col-md-6">
+                  <label for="c_postal_zip" class="text-black">Posta / Zip <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="c_postal_zip" name="postal_zip">
+                </div>
+              </div>
+
+              <div class="form-group row mb-5">
+                <div class="col-md-6">
+                  <label for="c_email_address" class="text-black">Email Address <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="c_email_address" name="email_address">
+                </div>
+                <div class="col-md-6">
+                  <label for="c_phone" class="text-black">Phone <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="c_phone" name="phone" placeholder="Phone Number">
+                </div>
+                </div>
+
+
+               
+
+              <div class="form-group">
+                <label for="c_order_notes" class="text-black">Order Notes</label>
+                <textarea name="order_notes" id="c_order_notes" cols="30" rows="5" class="form-control" placeholder="Write your notes here..."></textarea>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-6">
+            
+            <div class="row mb-5">
+              <div class="col-md-12">
+                <h2 class="h3 mb-3 text-black">Your Order</h2>
+                <div class="p-3 p-lg-5 border">
+                 
+                 
+                      <table class="table site-block-order-table mb-5">
+                        <thead>
+                          <th>Product</th>
+                          <th>Total</th>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Face Wash <strong class="mx-2">x</strong> 1</td>
+                            <td>$15.00</td>
+                          </tr>
+                          <tr>
+                            <td> Hair Gel <strong class="mx-2">x</strong>   1</td>
+                            <td>$25.00</td>
+                          </tr>
+                          <tr>
+                            <td class="text-black font-weight-bold"><strong>Cart Subtotal</strong></td>
+                            <td class="text-black">$40.00</td>
+                          </tr>
+                          <tr>
+                            <td class="text-black font-weight-bold"><strong>Order Total</strong></td>
+                            <td class="text-black font-weight-bold"><strong>$40.00</strong></td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                      <div class="border p-3 mb-3">
+                        <h3 class="h6 mb-0"><a class="d-block" data-toggle="collapse" href="#collapsebank" role="button" aria-expanded="false" aria-controls="collapsebank">Direct Bank Transfer</a></h3>
+
+                        <div class="collapse" id="collapsebank">
+                          <div class="py-2">
+
+                               <p>Enter your Payable Amount:</p>
+                               <input type="number" placeholder="40.00" id="c_amount" name="amount">
+                                <p class="mb-0">Enter Your bKs Number:</p>
+                                <input type="number" placeholder="01897******" id="c_account" name="account_num" >
+                                <p>Enter your Text Pin number:</p>
+                                <input type="number" id="" name="pass" >
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="border p-3 mb-3">
+                        <h3 class="h6 mb-0"><a class="d-block" data-toggle="collapse" href="#collapsecheque" role="button" aria-expanded="false" aria-controls="collapsecheque">Cheque Payment</a></h3>
+
+                        <div class="collapse" id="collapsecheque">
+                          <div class="py-2">
+                              <p>Enter your Payable Amount:</p>
+                               <input type="number" placeholder="40.00" id="c_amount" name="amount">
+                                <p class="mb-0">Enter Your bKs Number:</p>
+                                <input type="number" placeholder="01897******" id="c_account" name="account_num" >
+                                <p>Enter your Text Pin number:</p>
+                                <input type="number" id="" name="pass" >
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="border p-3 mb-5">
+                        <h3 class="h6 mb-0"><a class="d-block" data-toggle="collapse" href="#collapsepaypal" role="button" aria-expanded="false" aria-controls="collapsepaypal">Paypal</a></h3>
+
+                        <div class="collapse" id="collapsepaypal">
+                          <div class="py-2">
+                             <p>Enter your Payable Amount:</p>
+                               <input type="number" placeholder="40.00" id="c_amount" name="amount">
+                                <p class="mb-0">Enter Your bKs Number:</p>
+                                <input type="number" placeholder="01897******" id="c_account" name="account_num" >
+                                <p>Enter your Text Pin number:</p>
+                                <input type="number" id="" name="pass" >
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <button class="btn btn-primary btn-lg btn-block">Place Order</button>
+                      </div>
+                  
+                  
+                    
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+    </form>
+        <!-- </form> -->
+      </div>
+    </div>
+    
+    <!-- Footer Area Start -->
+    <footer class="footer-area section-padding-80-0">
+        <div class="container">
+            <div class="row justify-content-between">
+
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-sm-6 col-md-4">
+                    <div class="single-footer-widget mb-80">
+                        <!-- Footer Logo -->
+                        <a href="#" class="footer-logo"><img src="img/core-img/logo.png" alt=""></a>
+
+                        <p class="mb-30">We would love to serve you and let you enjoy your culinary experience. Excepteur sint occaecat cupidatat non proident.</p>
+
+                        <!-- Copywrite Text -->
+                        <div class="copywrite-text">
+                            <p> <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved  by <a href="https://colorlib.com" target="_blank">Tanvir Hossain</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+                    <div class="single-footer-widget mb-80">
+                        <!-- Widget Title -->
+                        <h4 class="widget-title">Opening times</h4>
+
+                        <!-- Open Times -->
+                        <div class="open-time">
+                            <p>Monday: Friday: 10.00 - 23.00</p>
+                            <p>Saturday: 10.00 - 19.00</p>
+                        </div>
+
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+                            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single Footer Widget -->
+                <div class="col-12 col-md-4 col-xl-3">
+                    <div class="single-footer-widget mb-80">
+
+                        <!-- Widget Title -->
+                        <h4 class="widget-title">Contact Us</h4>
+
+                        <!-- Contact Address -->
+                        <div class="contact-address">
+                            <p>Tel: (+880) 1772-327237</p>
+                            <p>E-mail:tanvirhosain@gmail.com</p>
+                            <p>Address: Iqbal Road, Mohammadpur, Dhaka-1208</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
+    
+  </div>
+  
+  <script>
+        function validate()
+        {
+            var country = document.getElementById('c_country').value;
+            var fname = document.getElementById('c_fname').value;
+            var lname = document.getElementById('c_lname').value;
+            var address = document.getElementById('c_address').value;
+            var state_country = document.getElementById('c_state_country').value;
+            var postal_zip = document.getElementById('c_postal_zip').value;
+            var mail = document.getElementById('c_email_address').value;
+            var phone = document.getElementById('c_phone').value;
+            var order_notes = document.getElementById('c_order_notes').value;
+            var amount = document.getElementById('c_amount').value;
+            var account = document.getElementById('c_account').value;
+           
+            countryREG = /^[A-z\. ]/;
+            fnameREG = /^[A-z\. ]/;
+            lnameREG = /^[A-z\. ]/;
+            addressREG = /^[A-z\. ]/;
+            state_countryREG = /^[A-z\. ]/;
+            postal_zipREG =/^[a-zA-Z0-9]{4}/; 
+            mailREG = /^[A-z\. ]/;
+            phoneREG = /^[0-9]{11}$/;
+            order_notesREG = /^[A-z\. ]/;
+            amountREG = /^[0-9]{12}$/;
+            accountREG = /^[0-9]{12}$/;
+            
+           
+            tr1 = countryREG.test(c_country);
+            tr2 = fnameREG.test(c_fname);
+            tr3 = lnameREG.test(c_lname);
+            tr4 = addressREG.test(c_address);
+            tr5 = state_countryREG.test(c_state_country);
+            tr6 = postal_zipREG.test(c_postal_zip);
+            tr7 = mailREG.test(c_email_address);
+            tr8 = phoneREG.test(c_phone);
+            tr9 = order_notesREG.test(c_order_notes);
+            tr10 = amountREG.test(c_amount);
+            tr11 = accountREG.test(c_account);
+           
+            if(!tr1)
+            alert("input a valid Country");
+            if(!tr2)
+            alert("input your first name");
+            if(!tr3)
+            alert("input your last Name");
+            if(!tr4)
+            alert("input a valid address");
+            if(!tr5)
+            alert("input your state");
+//            if(!tr6)
+//            alert("input a valid 4 digit postal code");
+            
+            if(!tr7)
+            alert("input a valid mail address");
+//            if(!tr8)
+//            alert("input 11 digit valid Phone  number");
+            if(!tr9)
+            alert("your order notes");
+            if(!tr4)
+            alert("input a your payable bill");
+            if(!tr4)
+            alert("input a valid bks account number");
+               
+               
+           
+        }
+       
+    </script>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
